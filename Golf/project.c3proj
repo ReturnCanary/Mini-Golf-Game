@@ -19,11 +19,21 @@
 			"name": "Touch",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "ika8te1aywt",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Swing_btn",
+			"stop_btn"
+		],
 		"subfolders": [
 			{
 				"items": [

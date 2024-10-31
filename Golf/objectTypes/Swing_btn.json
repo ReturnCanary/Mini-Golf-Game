@@ -1,37 +1,31 @@
 {
-	"name": "Bumper",
+	"name": "Swing_btn",
 	"plugin-id": "Sprite",
-	"sid": 218849081868811,
+	"sid": 110670479901206,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Physics",
-			"name": "Physics",
-			"sid": 655731686937114
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 20,
-						"height": 20,
-						"originX": 0,
-						"originY": 0,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5567705,
+						"imageSpriteId": 8427647,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 515505608667629,
+				"sid": 677162634228565,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

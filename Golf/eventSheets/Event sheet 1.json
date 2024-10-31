@@ -1,5 +1,148 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "starte",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 932928712161443
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Ball",
+							"sid": 621297391379212
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 178914627433387,
+							"parameters": {
+								"object-to-create": "Ball",
+								"layer": "0",
+								"x": "Ball_Spawner.X",
+								"y": "Ball_Spawner.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-world-gravity",
+							"objectClass": "Ball",
+							"sid": 391990309119816,
+							"behaviorType": "Physics",
+							"parameters": {
+								"gravity": "0"
+							}
+						}
+					],
+					"sid": 819401733330764
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 879871846858913
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Aim",
+							"sid": 737424839343765,
+							"parameters": {
+								"x": "Ball.X",
+								"y": "Ball.y"
+							}
+						}
+					],
+					"sid": 151486692313381
+				}
+			],
+			"sid": 851812650585747
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-in-touch",
+					"objectClass": "Touch",
+					"sid": 680503803142297
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Aim",
+					"sid": 173307652443491,
+					"parameters": {
+						"angle": "angle(Aim.X, Aim.Y, Touch.X, Touch.Y) + 90 "
+					}
+				}
+			],
+			"sid": 836364745905734
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 970760699190841,
+					"parameters": {
+						"object": "Swing_btn"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Aim",
+					"sid": 420933445445656,
+					"parameters": {
+						"instance-variable": "isAiming",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "apply-impulse-at-angle",
+					"objectClass": "Ball",
+					"sid": 840472686338887,
+					"behaviorType": "Physics",
+					"parameters": {
+						"impulse": "20",
+						"angle": "Aim.Angle -90",
+						"image-point": "0"
+					}
+				}
+			],
+			"sid": 248645912664389
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 376202290299482
+				}
+			],
+			"actions": [],
+			"sid": 444880817012146
+		}
+	],
 	"sid": 660453957816681
 }

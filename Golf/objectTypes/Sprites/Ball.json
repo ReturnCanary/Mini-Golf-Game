@@ -3,8 +3,22 @@
 	"plugin-id": "Sprite",
 	"sid": 835972359564713,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "shotsTaken",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 842009259013378
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 925397028934722
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
