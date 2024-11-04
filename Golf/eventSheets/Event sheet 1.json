@@ -74,74 +74,195 @@
 			"sid": 851812650585747
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player Control",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "is-in-touch",
-					"objectClass": "Touch",
-					"sid": 680503803142297
-				}
-			],
-			"actions": [
-				{
-					"id": "set-angle",
-					"objectClass": "Aim",
-					"sid": 173307652443491,
-					"parameters": {
-						"angle": "angle(Aim.X, Aim.Y, Touch.X, Touch.Y) + 90 "
-					}
-				}
-			],
-			"sid": 836364745905734
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 970760699190841,
-					"parameters": {
-						"object": "Swing_btn"
-					}
+					"eventType": "group",
+					"disabled": false,
+					"title": "Aiming",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-in-touch",
+									"objectClass": "Touch",
+									"sid": 730650809657331
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Aim",
+									"sid": 104570799931537,
+									"parameters": {
+										"instance-variable": "isAiming",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "is-touching-object",
+									"objectClass": "Touch",
+									"sid": 693037700196278,
+									"parameters": {
+										"object": "Swing_btn"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "Aim",
+									"sid": 100497988374182,
+									"parameters": {
+										"angle": "angle(Aim.X, Aim.Y, Touch.X, Touch.Y) + 90 "
+									}
+								}
+							],
+							"sid": 873368947302529
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Touch",
+									"sid": 326704346249794
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Aim",
+									"sid": 326009462088762,
+									"parameters": {
+										"instance-variable": "isAiming",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 172373929373409
+						}
+					],
+					"sid": 958349434071055
 				},
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "Aim",
-					"sid": 420933445445656,
-					"parameters": {
-						"instance-variable": "isAiming",
-						"comparison": 0,
-						"value": "1"
-					}
-				}
-			],
-			"actions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Reset",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 723144213175640,
+									"parameters": {
+										"object": "stop_btn"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Aim",
+									"sid": 890326520563918,
+									"parameters": {
+										"instance-variable": "isAiming",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "Aim",
+									"sid": 506050205184405,
+									"parameters": {
+										"angle": "angle(Aim.X, Aim.Y, Hole.X, Hole.Y) +90"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Aim",
+									"sid": 576010475895757,
+									"parameters": {
+										"instance-variable": "isAiming",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 802233273011904
+						}
+					],
+					"sid": 271383378959649
+				},
 				{
-					"id": "apply-impulse-at-angle",
-					"objectClass": "Ball",
-					"sid": 840472686338887,
-					"behaviorType": "Physics",
-					"parameters": {
-						"impulse": "20",
-						"angle": "Aim.Angle -90",
-						"image-point": "0"
-					}
+					"eventType": "group",
+					"disabled": false,
+					"title": "Swing",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 590924380630334,
+									"parameters": {
+										"object": "Swing_btn"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Aim",
+									"sid": 469304644368966,
+									"parameters": {
+										"instance-variable": "isAiming",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-impulse-at-angle",
+									"objectClass": "Ball",
+									"sid": 200313419272511,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "20",
+										"angle": "Aim.Angle -90",
+										"image-point": "0"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Aim",
+									"sid": 888675610239116,
+									"parameters": {
+										"instance-variable": "isAiming",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 835478429531491
+						}
+					],
+					"sid": 674074003052765
 				}
 			],
-			"sid": 248645912664389
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-any-touch-end",
-					"objectClass": "Touch",
-					"sid": 376202290299482
-				}
-			],
-			"actions": [],
-			"sid": 444880817012146
+			"sid": 906397248492470
 		}
 	],
 	"sid": 660453957816681

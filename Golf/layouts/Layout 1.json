@@ -359,6 +359,483 @@
 								"angle": 5.891596787189924,
 								"zElevation": 0
 							}
+						},
+						{
+							"type": "Grass",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 32,
+							"sid": 552295784209012,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 552295784209012,
+								"expanded": true
+							},
+							"world": {
+								"x": 105.41999949609104,
+								"y": 532.3159651094389,
+								"width": 39.98841800629921,
+								"height": 58.07320481918907,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "Grass",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 33,
+							"sid": 746328180103118,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 746328180103118,
+								"expanded": true
+							},
+							"world": {
+								"x": 187.75326497720607,
+								"y": 544.689776645866,
+								"width": 204.17915009848963,
+								"height": 32.84968302534196,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "Grass",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 34,
+							"sid": 796751252373845,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 796751252373845,
+								"expanded": true
+							},
+							"world": {
+								"x": 84.47971142893073,
+								"y": 691.747514828473,
+								"width": 119.9421626503713,
+								"height": 137.07513386655637,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "Grass",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 37,
+							"sid": 279641749222264,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 279641749222264,
+								"expanded": true
+							},
+							"world": {
+								"x": 178.2350182365651,
+								"y": 755.8056610588515,
+								"width": 47.1271439098972,
+								"height": 69.97108132518565,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "Grass",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 38,
+							"sid": 678665249788561,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 678665249788561,
+								"expanded": true
+							},
+							"world": {
+								"x": 170.62036637989604,
+								"y": 576.5760484647635,
+								"width": 103.2851355419761,
+								"height": 95.57249601612409,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "Grass",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 41,
+							"sid": 716927349001126,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 716927349001126,
+								"expanded": true
+							},
+							"mesh": {
+								"cols": 2,
+								"rows": 2,
+								"points": [
+									[
+										{
+											"x": 2.8079010009765626,
+											"y": -5.401638793945312,
+											"z": 0,
+											"u": 0,
+											"v": 0
+										},
+										{
+											"x": 4.260020446777344,
+											"y": 0.07138671875,
+											"z": 0,
+											"u": 1,
+											"v": 0
+										}
+									],
+									[
+										{
+											"x": -2.1416194915771483,
+											"y": 1.0237945556640624,
+											"z": 0,
+											"u": 0,
+											"v": 1
+										},
+										{
+											"x": 1.7614639282226563,
+											"y": 1.0237945556640624,
+											"z": 0,
+											"u": 1,
+											"v": 1
+										}
+									]
+								]
+							},
+							"world": {
+								"x": 127.78795649415198,
+								"y": 671.2831663304228,
+								"width": 20,
+								"height": 20,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "Grass",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 42,
+							"sid": 126402565742939,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 126402565742939,
+								"expanded": true
+							},
+							"mesh": {
+								"cols": 2,
+								"rows": 3,
+								"points": [
+									[
+										{
+											"x": -1.070806884765625,
+											"y": -0.0713897705078125,
+											"z": 0,
+											"u": 0,
+											"v": 0
+										},
+										{
+											"x": 1,
+											"y": 0,
+											"z": 0,
+											"u": 1,
+											"v": 0
+										}
+									],
+									[
+										{
+											"x": -0.19036712646484374,
+											"y": 0.57138671875,
+											"z": 0,
+											"u": 0,
+											"v": 0.5
+										},
+										{
+											"x": 1,
+											"y": 0.5,
+											"z": 0,
+											"u": 1,
+											"v": 0.5
+										}
+									],
+									[
+										{
+											"x": -0.309344482421875,
+											"y": 1.1427734375,
+											"z": 0,
+											"u": 0,
+											"v": 1
+										},
+										{
+											"x": 1,
+											"y": 1,
+											"z": 0,
+											"u": 1,
+											"v": 1
+										}
+									]
+								]
+							},
+							"world": {
+								"x": 189.65691432533424,
+								"y": 548.0211312343325,
+								"width": 20,
+								"height": 20,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "Grass",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 31,
+							"sid": 313923389104631,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 313923389104631,
+								"expanded": true
+							},
+							"world": {
+								"x": 84.47967511949312,
+								"y": 549.4488750534481,
+								"width": 29.994172693712045,
+								"height": 68.54333977540989,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "Grass",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 35,
+							"sid": 199409666068306,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 199409666068306,
+								"expanded": true
+							},
+							"world": {
+								"x": 146.5960499254581,
+								"y": 820.7734279185006,
+								"width": 100.2771536817514,
+								"height": 7.150326052017476,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0.053974048360058674,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "Grass",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 36,
+							"sid": 948880913772468,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 948880913772468,
+								"expanded": true
+							},
+							"world": {
+								"x": 189.06787355283123,
+								"y": 705.0030848338768,
+								"width": 20,
+								"height": 135.14896782538682,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 5.9929663631392645,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "Grass",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 43,
+							"sid": 839358892193796,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 839358892193796,
+								"expanded": true
+							},
+							"world": {
+								"x": 159.67430547060422,
+								"y": 685.9948652134814,
+								"width": 36.6570271083952,
+								"height": 20,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 6.072511355443119,
+								"zElevation": 0
+							}
 						}
 					],
 					"sid": 819923001366862,
@@ -744,7 +1221,7 @@
 				{
 					"type": "Ball_Spawner",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1358,483 +1835,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Grass",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 31,
-					"sid": 313923389104631,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 313923389104631,
-						"expanded": true
-					},
-					"world": {
-						"x": 84.47967511949312,
-						"y": 549.4488750534481,
-						"width": 29.994172693712045,
-						"height": 68.54333977540989,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Grass",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 32,
-					"sid": 552295784209012,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 552295784209012,
-						"expanded": true
-					},
-					"world": {
-						"x": 105.41999949609104,
-						"y": 532.3159651094389,
-						"width": 39.98841800629921,
-						"height": 58.07320481918907,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Grass",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 33,
-					"sid": 746328180103118,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 746328180103118,
-						"expanded": true
-					},
-					"world": {
-						"x": 187.75326497720607,
-						"y": 544.689776645866,
-						"width": 204.17915009848963,
-						"height": 32.84968302534196,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Grass",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 34,
-					"sid": 796751252373845,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 796751252373845,
-						"expanded": true
-					},
-					"world": {
-						"x": 84.47971142893073,
-						"y": 691.747514828473,
-						"width": 119.9421626503713,
-						"height": 137.07513386655637,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Grass",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 35,
-					"sid": 199409666068306,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 199409666068306,
-						"expanded": true
-					},
-					"world": {
-						"x": 146.5960499254581,
-						"y": 820.7734279185006,
-						"width": 100.2771536817514,
-						"height": 7.150326052017476,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0.053974048360058674,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Grass",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 36,
-					"sid": 948880913772468,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 948880913772468,
-						"expanded": true
-					},
-					"world": {
-						"x": 189.06787355283123,
-						"y": 705.0030848338768,
-						"width": 20,
-						"height": 135.14896782538682,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 5.9929663631392645,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Grass",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 37,
-					"sid": 279641749222264,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 279641749222264,
-						"expanded": true
-					},
-					"world": {
-						"x": 178.2350182365651,
-						"y": 755.8056610588515,
-						"width": 47.1271439098972,
-						"height": 69.97108132518565,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Grass",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 38,
-					"sid": 678665249788561,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 678665249788561,
-						"expanded": true
-					},
-					"world": {
-						"x": 170.62036637989604,
-						"y": 576.5760484647635,
-						"width": 103.2851355419761,
-						"height": 95.57249601612409,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Grass",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 41,
-					"sid": 716927349001126,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 716927349001126,
-						"expanded": true
-					},
-					"mesh": {
-						"cols": 2,
-						"rows": 2,
-						"points": [
-							[
-								{
-									"x": 2.8079010009765626,
-									"y": -5.401638793945312,
-									"z": 0,
-									"u": 0,
-									"v": 0
-								},
-								{
-									"x": 4.260020446777344,
-									"y": 0.07138671875,
-									"z": 0,
-									"u": 1,
-									"v": 0
-								}
-							],
-							[
-								{
-									"x": -2.1416194915771483,
-									"y": 1.0237945556640624,
-									"z": 0,
-									"u": 0,
-									"v": 1
-								},
-								{
-									"x": 1.7614639282226563,
-									"y": 1.0237945556640624,
-									"z": 0,
-									"u": 1,
-									"v": 1
-								}
-							]
-						]
-					},
-					"world": {
-						"x": 127.78795649415198,
-						"y": 671.2831663304228,
-						"width": 20,
-						"height": 20,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Grass",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 42,
-					"sid": 126402565742939,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 126402565742939,
-						"expanded": true
-					},
-					"mesh": {
-						"cols": 2,
-						"rows": 3,
-						"points": [
-							[
-								{
-									"x": -1.070806884765625,
-									"y": -0.0713897705078125,
-									"z": 0,
-									"u": 0,
-									"v": 0
-								},
-								{
-									"x": 1,
-									"y": 0,
-									"z": 0,
-									"u": 1,
-									"v": 0
-								}
-							],
-							[
-								{
-									"x": -0.19036712646484374,
-									"y": 0.57138671875,
-									"z": 0,
-									"u": 0,
-									"v": 0.5
-								},
-								{
-									"x": 1,
-									"y": 0.5,
-									"z": 0,
-									"u": 1,
-									"v": 0.5
-								}
-							],
-							[
-								{
-									"x": -0.309344482421875,
-									"y": 1.1427734375,
-									"z": 0,
-									"u": 0,
-									"v": 1
-								},
-								{
-									"x": 1,
-									"y": 1,
-									"z": 0,
-									"u": 1,
-									"v": 1
-								}
-							]
-						]
-					},
-					"world": {
-						"x": 189.65691432533424,
-						"y": 548.0211312343325,
-						"width": 20,
-						"height": 20,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Grass",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 43,
-					"sid": 839358892193796,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 839358892193796,
-						"expanded": true
-					},
-					"world": {
-						"x": 159.67430547060422,
-						"y": 685.9948652134814,
-						"width": 36.6570271083952,
-						"height": 20,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.072511355443119,
 						"zElevation": 0
 					}
 				}
