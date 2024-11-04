@@ -2,6 +2,16 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "wallvelocity",
+			"type": "number",
+			"initialValue": "150",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 504717279781335
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "starte",
@@ -55,12 +65,28 @@
 							}
 						},
 						{
+							"id": "set-height",
+							"objectClass": "Meter",
+							"sid": 752606314284360,
+							"parameters": {
+								"height": "1"
+							}
+						},
+						{
 							"id": "set-instvar-value",
 							"objectClass": "Aim",
 							"sid": 708371110990001,
 							"parameters": {
 								"instance-variable": "isAiming",
 								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Aim",
+							"sid": 117751422633290,
+							"parameters": {
+								"visibility": "visible"
 							}
 						}
 					],
@@ -209,9 +235,26 @@
 									}
 								},
 								{
+									"id": "stop-tweens",
+									"objectClass": "Meter",
+									"sid": 831776273629946,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\""
+									}
+								},
+								{
+									"id": "set-height",
+									"objectClass": "Meter",
+									"sid": 494739505362997,
+									"parameters": {
+										"height": "1"
+									}
+								},
+								{
 									"id": "set-instvar-value",
 									"objectClass": "Aim",
-									"sid": 576010475895757,
+									"sid": 804707526975491,
 									"parameters": {
 										"instance-variable": "isAiming",
 										"value": "0"
@@ -265,12 +308,29 @@
 									}
 								},
 								{
+									"id": "stop-tweens",
+									"objectClass": "Meter",
+									"sid": 467951486753343,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\""
+									}
+								},
+								{
 									"id": "set-instvar-value",
 									"objectClass": "Aim",
 									"sid": 390423401901493,
 									"parameters": {
 										"instance-variable": "isAiming",
 										"value": "2"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Aim",
+									"sid": 679158283207571,
+									"parameters": {
+										"visibility": "invisible"
 									}
 								}
 							],
@@ -319,6 +379,14 @@
 							}
 						},
 						{
+							"id": "set-visible",
+							"objectClass": "Aim",
+							"sid": 374707114749467,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
 							"id": "set-group-active",
 							"objectClass": "System",
 							"sid": 249875415032435,
@@ -334,6 +402,14 @@
 							"parameters": {
 								"instance-variable": "isAiming",
 								"value": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "Meter",
+							"sid": 923802721172831,
+							"parameters": {
+								"height": "1"
 							}
 						}
 					],
@@ -375,6 +451,168 @@
 				}
 			],
 			"sid": 309781540599829
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Meter",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Aim",
+							"sid": 892043831170446,
+							"parameters": {
+								"instance-variable": "isAiming",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 396385474110380,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-height",
+									"objectClass": "Meter",
+									"sid": 656537333464950,
+									"parameters": {
+										"comparison": 2,
+										"height": "150"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Meter",
+									"sid": 569308949313414,
+									"parameters": {
+										"instance-variable": "MeterHeight",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 426036485005918
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "Meter",
+									"sid": 703702564699842,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetHeight",
+										"end-value": "150",
+										"time": "1.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 592457451666069
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-height",
+									"objectClass": "Meter",
+									"sid": 677859344851807,
+									"parameters": {
+										"comparison": 0,
+										"height": "150"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 713994752040401
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Meter",
+									"sid": 724848590299197,
+									"parameters": {
+										"instance-variable": "MeterHeight",
+										"value": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "Meter",
+									"sid": 889763073039225,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetHeight",
+										"end-value": "1",
+										"time": "1.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 295568724668052
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-height",
+									"objectClass": "Meter",
+									"sid": 173054095621020,
+									"parameters": {
+										"comparison": 0,
+										"height": "1"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Meter",
+									"sid": 496767915727155,
+									"parameters": {
+										"instance-variable": "MeterHeight",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Meter",
+									"sid": 417934650878867,
+									"parameters": {
+										"instance-variable": "MeterHeight",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 833822600197317
+						}
+					]
+				}
+			],
+			"sid": 214002868711361
 		}
 	],
 	"sid": 660453957816681

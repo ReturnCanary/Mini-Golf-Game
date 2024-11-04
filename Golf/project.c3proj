@@ -26,6 +26,13 @@
 			"name": "Physics",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "ika8te1aywt",
@@ -44,7 +51,9 @@
 					"Grass",
 					"Hole",
 					"Sand",
-					"Water"
+					"Water",
+					"Meter",
+					"Meter_frame"
 				],
 				"subfolders": [],
 				"name": "Sprites"
