@@ -297,17 +297,6 @@
 							],
 							"actions": [
 								{
-									"id": "apply-impulse-at-angle",
-									"objectClass": "Ball",
-									"sid": 200313419272511,
-									"behaviorType": "Physics",
-									"parameters": {
-										"impulse": "20",
-										"angle": "Aim.Angle -90",
-										"image-point": "0"
-									}
-								},
-								{
 									"id": "stop-tweens",
 									"objectClass": "Meter",
 									"sid": 467951486753343,
@@ -317,20 +306,31 @@
 									}
 								},
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Aim",
-									"sid": 390423401901493,
-									"parameters": {
-										"instance-variable": "isAiming",
-										"value": "2"
-									}
-								},
-								{
 									"id": "set-visible",
 									"objectClass": "Aim",
 									"sid": 679158283207571,
 									"parameters": {
 										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "apply-impulse-at-angle",
+									"objectClass": "Ball",
+									"sid": 646187173400493,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "Meter.Height * 0.10",
+										"angle": "Aim.Angle -90",
+										"image-point": "0"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Aim",
+									"sid": 750515131575820,
+									"parameters": {
+										"instance-variable": "isAiming",
+										"value": "2"
 									}
 								}
 							],
