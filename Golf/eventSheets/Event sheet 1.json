@@ -44,6 +44,24 @@
 							"parameters": {
 								"gravity": "0"
 							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 497458614833638,
+							"parameters": {
+								"group-name": "\"Player Control\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Aim",
+							"sid": 708371110990001,
+							"parameters": {
+								"instance-variable": "isAiming",
+								"value": "0"
+							}
 						}
 					],
 					"sid": 819401733330764
@@ -249,10 +267,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "Aim",
-									"sid": 888675610239116,
+									"sid": 390423401901493,
 									"parameters": {
 										"instance-variable": "isAiming",
-										"value": "0"
+										"value": "2"
 									}
 								}
 							],
@@ -263,6 +281,100 @@
 				}
 			],
 			"sid": 906397248492470
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Moving",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-sleeping",
+							"objectClass": "Ball",
+							"sid": 990443377603050,
+							"behaviorType": "Physics"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Aim",
+							"sid": 179622856655778,
+							"parameters": {
+								"instance-variable": "isAiming",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "Aim",
+							"sid": 456169652447704,
+							"parameters": {
+								"angle": "angle(Aim.X, Aim.Y, Hole.X, Hole.Y) +90"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 249875415032435,
+							"parameters": {
+								"group-name": "\"Player Control\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Aim",
+							"sid": 230806671316390,
+							"parameters": {
+								"instance-variable": "isAiming",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 245799090325052
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-sleeping",
+							"objectClass": "Ball",
+							"sid": 572923588213817,
+							"behaviorType": "Physics",
+							"isInverted": true
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Aim",
+							"sid": 396423805383173,
+							"parameters": {
+								"instance-variable": "isAiming",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 172053892644282,
+							"parameters": {
+								"group-name": "\"Player Control\"",
+								"state": "deactivated"
+							}
+						}
+					],
+					"sid": 476025108392209
+				}
+			],
+			"sid": 309781540599829
 		}
 	],
 	"sid": 660453957816681
