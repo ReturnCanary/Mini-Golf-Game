@@ -12,6 +12,16 @@
 			"sid": 504717279781335
 		},
 		{
+			"eventType": "variable",
+			"name": "shotstaken",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 681227130499673
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "starte",
@@ -613,6 +623,158 @@
 				}
 			],
 			"sid": 214002868711361
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Traps",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Ball",
+							"sid": 167103883651933,
+							"parameters": {
+								"object": "Sand"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-linear-damping",
+							"objectClass": "Ball",
+							"sid": 792862995489822,
+							"behaviorType": "Physics",
+							"parameters": {
+								"linear-damping": "5"
+							}
+						}
+					],
+					"sid": 131130595428817
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 999234465833440
+						}
+					],
+					"actions": [
+						{
+							"id": "set-linear-damping",
+							"objectClass": "Ball",
+							"sid": 840710389367437,
+							"behaviorType": "Physics",
+							"parameters": {
+								"linear-damping": "1"
+							}
+						}
+					],
+					"sid": 239540034106878
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Ball",
+							"sid": 204771775626956,
+							"parameters": {
+								"object": "Water"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Ball",
+							"sid": 492533531838839
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 657243767624141,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 713852562423412,
+							"parameters": {
+								"object-to-create": "Ball",
+								"layer": "0",
+								"x": "Ball_Spawner.x",
+								"y": "Ball_Spawner.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 875549754606819
+				}
+			],
+			"sid": 537734947443139
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Hole",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Ball",
+							"sid": 384724958550295,
+							"parameters": {
+								"object": "Hole"
+							}
+						},
+						{
+							"id": "compare-velocity",
+							"objectClass": "Ball",
+							"sid": 228924699054908,
+							"behaviorType": "Physics",
+							"parameters": {
+								"which": "overall-velocity",
+								"comparison": 3,
+								"value": "wallvelocity"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Ball",
+							"sid": 244259611694013,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Aim",
+							"sid": 239944441465402,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 649975171189247
+				}
+			],
+			"sid": 286169342180326
 		}
 	],
 	"sid": 660453957816681

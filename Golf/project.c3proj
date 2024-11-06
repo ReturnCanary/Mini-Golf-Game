@@ -15,6 +15,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
@@ -39,7 +46,12 @@
 	"objectTypes": {
 		"items": [
 			"Swing_btn",
-			"stop_btn"
+			"stop_btn",
+			"Text",
+			"txt_reset",
+			"txt_swing",
+			"txt_shots",
+			"txt_results"
 		],
 		"subfolders": [
 			{
