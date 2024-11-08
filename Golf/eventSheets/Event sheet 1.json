@@ -22,6 +22,16 @@
 			"sid": 681227130499673
 		},
 		{
+			"eventType": "variable",
+			"name": "NextHole",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 823586206111711
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "starte",
@@ -66,15 +76,6 @@
 							}
 						},
 						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 497458614833638,
-							"parameters": {
-								"group-name": "\"Player Control\"",
-								"state": "activated"
-							}
-						},
-						{
 							"id": "set-height",
 							"objectClass": "Meter",
 							"sid": 752606314284360,
@@ -98,6 +99,124 @@
 							"parameters": {
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 664981399219275,
+							"parameters": {
+								"object-to-create": "txt_shots",
+								"layer": "\"HUD\"",
+								"x": "16",
+								"y": "14",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 103614391783080,
+							"parameters": {
+								"variable": "shotstaken",
+								"value": "0"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 869096975277110,
+							"parameters": {
+								"object-to-create": "Meter",
+								"layer": "\"HUD\"",
+								"x": "30",
+								"y": "645",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 104912559348747,
+							"parameters": {
+								"object-to-create": "Meter_frame",
+								"layer": "\"HUD\"",
+								"x": "30",
+								"y": "645",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 996957115221806,
+							"parameters": {
+								"object-to-create": "stop_btn",
+								"layer": "\"HUD\"",
+								"x": "30",
+								"y": "700",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 907622653477015,
+							"parameters": {
+								"object-to-create": "Swing_btn",
+								"layer": "\"HUD\"",
+								"x": "30",
+								"y": "780",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 694003837816658,
+							"parameters": {
+								"object-to-create": "txt_reset",
+								"layer": "\"HUD\"",
+								"x": "stop_btn.X",
+								"y": "stop_btn.y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 243328422798610,
+							"parameters": {
+								"object-to-create": "txt_swing",
+								"layer": "\"HUD\"",
+								"x": "Swing_btn.x",
+								"y": "Swing_btn.y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 903877838444615,
+							"parameters": {
+								"group-name": "\"Player Control\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 845143683494598,
+							"parameters": {
+								"variable": "NextHole",
+								"value": "0"
+							}
 						}
 					],
 					"sid": 819401733330764
@@ -119,6 +238,14 @@
 							"parameters": {
 								"x": "Ball.X",
 								"y": "Ball.y"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "txt_shots",
+							"sid": 996131501777352,
+							"parameters": {
+								"text": "\"Shots: \" & shotstaken"
 							}
 						}
 					],
@@ -341,6 +468,15 @@
 									"parameters": {
 										"instance-variable": "isAiming",
 										"value": "2"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 658139420665792,
+									"parameters": {
+										"variable": "shotstaken",
+										"value": "1"
 									}
 								}
 							],
@@ -769,9 +905,50 @@
 							"parameters": {
 								"visibility": "invisible"
 							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "txt_shots",
+							"sid": 436795151676691
+						},
+						{
+							"id": "set-text",
+							"objectClass": "txt_results",
+							"sid": 369988119059221,
+							"parameters": {
+								"text": "\"Shots: \" &shotstaken"
+							}
 						}
 					],
-					"sid": 649975171189247
+					"sid": 649975171189247,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 866188716498740
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 838366150183111,
+									"parameters": {
+										"object-to-create": "txt_results",
+										"layer": "\"HUD\"",
+										"x": "270",
+										"y": "390",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 374553128095096
+						}
+					]
 				}
 			],
 			"sid": 286169342180326
