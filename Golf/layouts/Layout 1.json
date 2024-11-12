@@ -836,6 +836,41 @@
 								"angle": 6.072511355443119,
 								"zElevation": 0
 							}
+						},
+						{
+							"type": "Sand",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 25,
+							"sid": 863808398968968,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 863808398968968,
+								"expanded": true
+							},
+							"world": {
+								"x": 299.59911328514306,
+								"y": 415.2273383565332,
+								"width": 92.81501874047416,
+								"height": 20,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
 						}
 					],
 					"sid": 819923001366862,
@@ -1237,8 +1272,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 329,
-						"y": 791,
+						"x": 348,
+						"y": 225,
 						"width": 10,
 						"height": 10,
 						"originX": 0.5,
@@ -1995,41 +2030,6 @@
 						"y": 515,
 						"width": 226,
 						"height": 90,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sand",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 25,
-					"sid": 863808398968968,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 863808398968968,
-						"expanded": true
-					},
-					"world": {
-						"x": 299.59911328514306,
-						"y": 415.2273383565332,
-						"width": 92.81501874047416,
-						"height": 20,
 						"originX": 0,
 						"originY": 0,
 						"color": [

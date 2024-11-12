@@ -935,15 +935,28 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 838366150183111,
+									"sid": 263914846263732,
 									"parameters": {
 										"object-to-create": "txt_results",
 										"layer": "\"HUD\"",
-										"x": "270",
-										"y": "390",
+										"x": "150",
+										"y": "370",
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 630330108652989,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "txt_results",
+									"sid": 847817012748951
 								}
 							],
 							"sid": 374553128095096
